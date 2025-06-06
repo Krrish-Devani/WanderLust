@@ -1,0 +1,75 @@
+<% layout('/layouts/boilerplate.ejs') %>
+
+<!-- <div class="row mt-3">
+    <div class="alert alert-danger col-6 offset-3" role="alert">
+        <p class="alert-heading"></p>
+    </div>
+</div> -->
+
+<% layout('/layouts/boilerplate.ejs') %>
+
+<div class="container mt-5 mb-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="card border-0 shadow">
+                <div class="card-body p-4">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-exclamation-triangle fa-4x text-danger mb-3 error-icon"></i>
+                        <h2 class="mb-2">Oops! Something went wrong</h2>
+                        <p class="text-muted">We encountered an error while processing your request</p>
+                    </div>
+                    
+                    <div class="alert alert-danger">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <strong>Error Details:</strong>
+                            <span class="badge bg-danger"><%= err.statusCode || 500 %></span>
+                        </div>
+                        <p class="mb-0"><%= err.message %></p>
+                        <% if (process.env.NODE_ENV !== "production" && err.stack) { %>
+                            <hr>
+                            <details>
+                                <summary>Error Stack</summary>
+                                <pre class="mt-2 small text-danger bg-light p-2"><%= err.stack %></pre>
+                            </details>
+                        <% } %>
+                    </div>
+                    
+                    <div class="d-grid gap-3 mt-4">
+                        <button onclick="window.history.back()" class="btn btn-outline-secondary">
+                            <i class="fas fa-arrow-left me-2"></i>Go Back
+                        </button>
+                        <a href="/listings" class="btn btn-primary">
+                            <i class="fas fa-home me-2"></i>Return to Homepage
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .error-icon {
+        animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+    }
+    
+    details summary {
+        cursor: pointer;
+        color: #6c757d;
+        font-size: 0.9rem;
+    }
+    
+    pre {
+        white-space: pre-wrap;
+        word-break: break-word;
+        border-radius: 0.25rem;
+        max-height: 200px;
+        overflow-y: auto;
+    }
+</style>

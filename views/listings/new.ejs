@@ -1,0 +1,160 @@
+<!-- <% layout("/layouts/boilerplate") %>
+
+<body>
+    <div class="row">
+        <div class="col-8 offset-2 mt-3">
+            
+            <h3>Create new Listing</h3>
+            <form action="/listings" method="post" class="needs-validation" novalidate enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="title" class="form-lable">Title</label>
+                    <input type="text" name="listing[title]" placeholder="Enter Title" class="form-control" required>
+                    <div class="invalid-feedback">
+                        Please choose a username.
+                    </div>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="description" class="form-lable">Description</label>
+                    <textarea name="listing[description]" id="" placeholder="Enter the description" class="form-control" required></textarea>
+                    <div class="invalid-feedback">
+                        Please enter your decsription.
+                    </div>
+                </div>
+            
+                <div class="mb-3">
+                    <label for="image" class="form-lable">Uplaod Image</label>
+                    <input type="file" name="listing[image]" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="category" class="form-label">Category</label>
+                    <select name="listing[category]" id="category" class="form-select" required>
+                        <option selected disabled value="">Select a category...</option>
+                        <option value="trending">Trending</option>
+                        <option value="rooms">Rooms</option>
+                        <option value="iconicCity">Iconic City</option>
+                        <option value="mountain">Mountain</option>
+                        <option value="castle">Castle</option>
+                        <option value="swimmingPool">Swimming Pool</option>
+                        <option value="camping">Camping</option>
+                        <option value="farms">Farms</option>
+                        <option value="artic">Artic</option>
+                        <option value="domes">Domes</option>
+                        <option value="sailboat">Sailboat</option>
+                    </select>
+                </div>
+                
+                <div class="row">
+                    <div class="mb-3 col-md-4">
+                        <label for="price" class="form-lable">Price</label>
+                        <input type="text" name="listing[price]" placeholder="Enter Price" class="form-control" required>
+                        <div class="invalid-feedback">
+                            Please enter Valid Price.
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3 col-md-8">
+                        <label for="location" class="form-lable">Location</label>
+                        <input type="text" name="listing[location]" placeholder="Enter Location" class="form-control" required>
+                        <div class="invalid-feedback">
+                            Please enter your location.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="country" class="form-lable">Country</label>
+                    <input type="text" name="listing[country]" placeholder="Enter Country" class="form-control" required>
+                    <div class="invalid-feedback">
+                        Please enter your country.
+                    </div>
+                </div>
+                <button class="btn btn-dark add-btn mt-3 mb-3">Add</button>
+            </form>
+        </div>
+    </div>
+</body> -->
+
+
+
+
+
+
+<% layout("/layouts/boilerplate") %>
+
+<body>
+    <div class="row">
+        <div class="col-12 col-md-10 col-lg-8 mx-auto px-3 px-md-2 mt-3">
+            
+            <h3 class="mb-4">Create new Listing</h3>
+            <form action="/listings" method="post" class="needs-validation" novalidate enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="title" class="form-lable">Title</label>
+                    <input type="text" name="listing[title]" placeholder="Enter Title" class="form-control" required>
+                    <div class="invalid-feedback">
+                        Please choose a username.
+                    </div>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="description" class="form-lable">Description</label>
+                    <textarea name="listing[description]" id="" placeholder="Enter the description" class="form-control" required></textarea>
+                    <div class="invalid-feedback">
+                        Please enter your decsription.
+                    </div>
+                </div>
+            
+                <div class="mb-3">
+                    <label for="image" class="form-lable">Uplaod Image</label>
+                    <input type="file" name="listing[image]" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="category" class="form-label">Category</label>
+                    <select name="listing[category]" id="category" class="form-select" required>
+                        <option selected disabled value="">Select a category...</option>
+                        <option value="trending">Trending</option>
+                        <option value="rooms">Rooms</option>
+                        <option value="iconicCity">Iconic City</option>
+                        <option value="mountain">Mountain</option>
+                        <option value="castle">Castle</option>
+                        <option value="swimmingPool">Swimming Pool</option>
+                        <option value="camping">Camping</option>
+                        <option value="farms">Farms</option>
+                        <option value="artic">Artic</option>
+                        <option value="domes">Domes</option>
+                        <option value="sailboat">Sailboat</option>
+                    </select>
+                </div>
+                
+                <div class="row">
+                    <div class="mb-3 col-12 col-sm-4">
+                        <label for="price" class="form-lable">Price</label>
+                        <input type="text" name="listing[price]" placeholder="Enter Price" class="form-control" required>
+                        <div class="invalid-feedback">
+                            Please enter Valid Price.
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3 col-12 col-sm-8">
+                        <label for="location" class="form-lable">Location</label>
+                        <input type="text" name="listing[location]" placeholder="Enter Location" class="form-control" required>
+                        <div class="invalid-feedback">
+                            Please enter your location.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="country" class="form-lable">Country</label>
+                    <input type="text" name="listing[country]" placeholder="Enter Country" class="form-control" required>
+                    <div class="invalid-feedback">
+                        Please enter your country.
+                    </div>
+                </div>
+                <button class="btn btn-dark add-btn mt-3 mb-3">Add</button>
+            </form>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,238 @@
+/* =====================
+   FONTS & GLOBAL STYLES
+   ===================== */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+/* =====================
+   NAVIGATION & HEADER
+   ===================== */
+.navbar {
+    height: 5rem;
+    background-color: white;
+}
+
+.fa-compass {
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: #222222 !important;
+}
+
+.navbar-nav a {
+    background-color: white;
+}
+
+/* =====================
+   SEARCH COMPONENTS
+   ===================== */
+.btn-search {
+    background-color: #fe424d;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 0 1rem 0 1rem;
+}
+
+.btn-search:hover {
+    background-color: #fe424d;
+    color: white;
+    border: none;
+}
+
+.search-inp {
+    border-radius: 25px;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    font-size: 1rem;
+}
+
+.btn-search i {
+    display: inline;
+    margin: 0.5rem;
+}
+
+/* =====================
+   FILTER COMPONENTS
+   ===================== */
+#filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.filter {
+    text-align: center;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.filter p {
+    font-size: 0.8rem;
+}
+
+.filter:hover {
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.active-filter {
+    opacity: 1;
+    border-bottom: 2px solid #222;
+    font-weight: bold;
+}
+
+.tax-info {
+    display: none;
+}
+
+.tax-toggle {
+    border: 1px solid black;
+    border-radius: 1rem;
+    height: 3.25rem;
+    padding: 1rem;
+    margin-left: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+/* =====================
+   LISTING CARD STYLES
+   ===================== */
+.listing-card {
+    border: none;
+    margin-bottom: 2rem;
+}
+
+.card-img-top {
+    border-radius: 1rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 0;
+}
+
+.card-body p {
+    font-weight: 400;
+}
+
+.listing-link {
+    text-decoration: none;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: white;
+}
+
+/* =====================
+   BUTTON STYLES
+   ===================== */
+.add-btn {
+    background-color: #fe424d;
+    border: none;
+}
+
+.edit-btn {
+    background-color: #fe424d;
+    border: none;
+}
+
+.del button {
+    border: none;
+}
+
+/* =====================
+   DETAIL PAGE STYLES
+   ===================== */
+.show-img {
+    height: 55vh;
+    object-fit: cover;
+}
+
+.s {
+    display: flex;
+}
+
+.del {
+    margin-left: 1rem;
+}
+
+/* =====================
+   MAP STYLES
+   ===================== */
+#map {
+    height: 400px;
+    width: 150%;
+}
+
+/* =====================
+   UTILITY STYLES
+   ===================== */
+.no-shadow {
+    box-shadow: none;
+    /* border: 1px solid #ddd; Optional: Add a subtle border for better structure */
+}
+
+.d-flex.gap-2 > * {
+    margin-right: 0.5rem; /* Adds spacing between buttons */
+}
+
+.d-flex.gap-2 > *:last-child {
+    margin-right: 0; /* Removes margin from the last button */
+}
+
+/* =====================
+   FOOTER STYLES
+   ===================== */
+.f-info {
+    text-align: center;
+    height: 8rem;
+    display: flex;
+    background-color: #ebebeb;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+.f-info-links, 
+.f-info-socials, 
+.f-info-brand {
+    width: 100%;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+    margin-right: 1rem;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+.f-info-socials i {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
