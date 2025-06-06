@@ -80,6 +80,10 @@ app.use((req, res, next) => {
     next();
 });
 
+app.get('/', (req, res) => {
+    res.redirect('/listings');
+});
+
 app.use('/listings', ListingRoutes);
 app.use('/listings/:id/reviews', ReviewRoutes);
 app.use('/', UserRoutes);
@@ -95,5 +99,5 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}/listings`);
+    console.log(`Server is running on http://localhost:${PORT}`);
 });
