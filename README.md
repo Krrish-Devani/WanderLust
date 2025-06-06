@@ -4,7 +4,7 @@ A full-featured accommodation booking platform with integrated maps, user authen
 
 ## Live Demo 🚀
 
-🔗 [View Live Site](https://wanderlust-j2gp.onrender.com/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Online-brightgreen?style=for-the-badge&logo=vercel)](https://wanderlust-j2gp.onrender.com/)
 
 ## Features ✨
 
@@ -168,16 +168,21 @@ The application is fully responsive and works well on mobile, tablet, and deskto
 - [ ] Multi-language support 
 - [ ] Dark mode toggle 
 
-## Acknowledgments 🙏
-
-- [Bootstrap](https://getbootstrap.com/) - Frontend framework
-- [MapBox](https://www.mapbox.com/) - Maps API
-- [Cloudinary](https://cloudinary.com/) - Image management
-- [Font Awesome](https://fontawesome.com/) - Icons
-- [Express.js](https://expressjs.com/) - Web framework
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Passport.js](https://www.passportjs.org/) - Authentication middleware
-
 ---
+
+## 🙏 Acknowledgments
+
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
+[![MapBox](https://img.shields.io/badge/MapBox-4264FB?style=for-the-badge&logo=mapbox&logoColor=white)](https://www.mapbox.com/)
+[![Cloudinary](https://img.shields.io/badge/Cloudinary-3448C5?style=for-the-badge&logo=cloudinary&logoColor=white)](https://cloudinary.com/)
+[![Font Awesome](https://img.shields.io/badge/Font%20Awesome-228BE6?style=for-the-badge&logo=fontawesome&logoColor=white)](https://fontawesome.com/)
+[![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
+[![Passport.js](https://img.shields.io/badge/Passport.js-34E27A?style=for-the-badge&logo=passport&logoColor=white)](https://www.passportjs.org/)
+[![Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://render.com/)
+
+## 🔗 Connect
+
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/krrish-devani-121076323)
 
 Created with ❤️ by Krrish Devani  
