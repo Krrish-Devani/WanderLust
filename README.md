@@ -180,4 +180,4 @@ The application is fully responsive and works well on mobile, tablet, and deskto
 
 ---
 
-Created with ❤️ by [Krrish Devani]  
+Created with ❤️ by Krrish Devani  
